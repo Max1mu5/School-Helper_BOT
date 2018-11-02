@@ -1,1 +1,1 @@
-web: python runserver.py ${PORT}
+worker: python main.py
