@@ -1,1 +1,1 @@
-web gunicorn geeni:app
+web: python runserver.py $PORT
