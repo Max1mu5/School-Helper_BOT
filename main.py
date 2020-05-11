@@ -4,7 +4,6 @@ import Schedule.Schedule_10B as S_10B
 import HandlerClass
 import config
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
-from vk_api.utils import get_random_id
 
 TOKEN = config.TOKEN
 
