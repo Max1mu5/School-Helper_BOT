@@ -1,5 +1,4 @@
-import vk_api
-from vk_api.utils import get_random_id
+import vk_api.utils
 
 class Handler:
     def __init__(self, session, schedule):
@@ -7,7 +6,7 @@ class Handler:
         self.schedule = schedule
 
     def curr_lesson(self, event, str):
-        randomid = get_random_id()
+        randomid = vk_api.utils.get_random_id()
         if str.lower() == 'понедельник':
             self.vk_session.method('messages.send',
                               {'peer_id': event.obj.from_id, 'message': self.schedule.lessons['monday'], 'random_id': randomid}
