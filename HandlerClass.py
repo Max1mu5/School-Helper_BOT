@@ -1,4 +1,5 @@
-import vk_api.utils
+import vk_api
+from vk_api.utils import get_random_id
 
 class Handler:
     def __init__(self, session, schedule):
